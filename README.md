@@ -31,18 +31,19 @@ Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coi
 #### Verificando suas versões de .NET e TLS
 
 1. Execute o arquivo `tls-example.exe`, que pode ser encontrado clicando [aqui](https://github.com/pagarme/TLS-update/blob/master/C%23/):
+
 ##### Windows:
-        Execute o arquivo como qualquer outro `.exe` normalmente.
+  Execute o arquivo como qualquer outro `.exe` normalmente.
 
 ##### Linux:
-        Execute o comando a partir do `mono` da seguinte maneira:
-        ```
-          $ mono tls-example.exe
-        ```
-          * Caso a requisição retorne sucesso, a seguinte mensagem será exibida em seu terminal:
-          ```
-            "Sucesso: sua conexão com a Pagar.me está utilizando o protocolo TLS 1.2."
-          ```
+  - Execute o comando a partir do `mono` da seguinte maneira:
+  ```
+  $ mono tls-example.exe
+  ```
 
+  * Caso a requisição retorne sucesso, a seguinte mensagem será exibida em seu terminal:
+  ```
+  "Sucesso: sua conexão com a Pagar.me está utilizando o protocolo TLS 1.2."
+  ```
 #### Links:
   - [Exemplo completo](https://github.com/pagarme/TLS-update/tree/master/C%23)
