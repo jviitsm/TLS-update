@@ -1,3 +1,4 @@
+
 ### Python
 
 #### Requisitos
@@ -150,3 +151,30 @@ Alguns links que podem te ajudar nessa atualização são esses:
 * [change-openssl-version-in-mamp](https://stackoverflow.com/questions/33887552/change-openssl-version-in-mamp)
 * [Unknown SSL protocol error](https://github.com/paypal/PayPal-PHP-SDK/issues/484#issuecomment-176240130)
 * [PHP - OpenSSL Installation](http://php.net/manual/pt_BR/openssl.installation.php)
+=======
+### Java 
+
+#### TLS V1.2 no Java
+
+Na versão 1.6 do Java, o TLS v1.2 está disponível a partir da atualização de número 11. Caso necessário, atualize JDK de seu servidor, as versões mais recentes estão disponíveis [aqui](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html). 
+
+Na versão 1.7 e 1.8 do Java  o suporte para TLS v1.2 é nativo. 
+
+A habilitação deste recurso depende do servidor que sua aplicação está utilizando. 
+
+##### Vericando se o seu servidor é capaz de realizar requisições utilizando o TLS v.12
+
+
+###### Windows 
+
+Dê um duplo clique sobre o arquivo TLS.jar
+
+
+###### Linux 
+
+Execute o seguinte comando a partir do terminal na pasta que contém o arquivo TLS.jar: 
+
+java -jar TLS.jar 
+
+Projeto completo: 
+
