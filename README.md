@@ -164,11 +164,11 @@ A habilitação deste recurso depende do servidor que sua aplicação está util
 
 ##### Vericando se o seu servidor é capaz de realizar requisições utilizando o TLS v.12
 
+Obtenha o arquivo .jar [aqui](https://github.com/pagarme/TLS-update/blob/readmeJava/Java/TLS.jar)
 
 ###### Windows 
 
 Dê um duplo clique sobre o arquivo TLS.jar
-
 
 ###### Linux 
 
@@ -176,5 +176,5 @@ Execute o seguinte comando a partir do terminal na pasta que contém o arquivo T
 
 java -jar TLS.jar 
 
-Projeto completo: 
+Classe completa: 
 
