@@ -26,7 +26,7 @@
 
 ### .NET
 
-#### . Requisitos para .NET
+#### Requisitos
 Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coisa necessária é utilizar a versão mais recente do Mono(linux) ou .NET Framework (4.5 ou maior).
 
 #### Verificando suas versões de .NET e TLS
@@ -151,7 +151,8 @@ Alguns links que podem te ajudar nessa atualização são esses:
 * [change-openssl-version-in-mamp](https://stackoverflow.com/questions/33887552/change-openssl-version-in-mamp)
 * [Unknown SSL protocol error](https://github.com/paypal/PayPal-PHP-SDK/issues/484#issuecomment-176240130)
 * [PHP - OpenSSL Installation](http://php.net/manual/pt_BR/openssl.installation.php)
-=======
+
+* * * 
 ### Java 
 
 #### TLS V1.2 no Java
@@ -178,3 +179,25 @@ java -jar TLS.jar
 
 Classe completa [aqui](https://github.com/pagarme/TLS-update/blob/readmeJava/Java/TLS.java) 
 
+* * *
+### Ruby
+
+#### Requisitons
+  - É necessário que a versão de seu Ruby seja 2.0.0 ou superior, assim como a do OpenSSL 1.0.1c ou superior:
+    - O Ruby 2.0.0 ou superior é necessário para que o mesmo consiga utilizar o TLSv1.2 do OpenSSL de seu próprio sistema;
+    - Para conseguir utilizar o TLSv1.2 é necessário o OpenSSL 1.0.1c ou superior instalado em seu sistema.
+  
+  - Para atualizar as dependências de seu aplicativo, talvez seja necessário utilizar o comando `bundle update`.
+
+#### Testando sua conexão com TSLv1.2
+1. Execute o arquivo `tls-example.rb`, que pode ser encontrado [aqui](https://github.com/pagarme/TLS-update/tree/master/Ruby), da seguinte maneira:
+
+    ```
+    $ ruby tls-example.rb
+    ```
+
+    - Caso a requisição tenha sido feita com sucesso, a seguinte mensagem será exibida em seu terminal:
+        ```
+        Sucesso: sua conexão com a Pagar.me está utilizando o protocolo TLS 1.2.
+        ```
+    - Caso ocorra alguam erro na requisição devido ao protocolo TLS, uma excessão será lançada.
