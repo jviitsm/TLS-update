@@ -1,4 +1,22 @@
 
+### Introdução
+
+Esse repositório contém dicas e instruções para te ajudar a verificar se seu sistema é compatível com certificados TLS 1.2.
+
+Tornar seu sistema compatível com esse protocolo de segurança é responsabilidade total sua, e este é apenas um repositório que tentará te ajudar à fazer isso.
+
+Para cada linguagem de programação, há um passo à passo diferente, para que você descubra se seu sistema é compatível com o TLS 1.2 ou não. Escolha sua linguagem abaixo e veja os requisitos para que tudo funcione perfeitamente.
+
+* [Python](#python)
+* [.NET](#net)
+* [Node](#node)
+* [PHP](#php)
+* [Java](#java)
+* [Ruby](#ruby)
+
+
+* * *
+
 ### Python
 
 #### Requisitos
@@ -6,7 +24,7 @@
 - Python usa o OpenSSL fornecida pelo sistema.
 - TLS 1.2 precisa da versão 1.0.1c OpenSSL ou superior.
 
-#### Testando sua conexão com TLS 1.2.
+#### Verificando sua conexão com TLS 1.2.
 
 1. Baixe [esse arquivo](Python/tls-example.py) em seu servidor.
 
@@ -31,7 +49,7 @@ Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coi
 
 #### Verificando suas versões de .NET e TLS
 
-1. Execute o arquivo `tls-example.exe`, que pode ser encontrado clicando [aqui](https://github.com/pagarme/TLS-update/blob/master/C%23/):
+1. Execute o arquivo `tls-example.exe`, que pode ser encontrado clicando [aqui](C%23/):
 
 ##### Windows:
   Execute o arquivo como qualquer outro `.exe` normalmente.
@@ -47,7 +65,7 @@ Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coi
     "Sucesso: sua conexão com a Pagar.me está utilizando o protocolo TLS 1.2."
     ```
 #### Links:
-  - [Exemplo completo](https://github.com/pagarme/TLS-update/tree/master/C%23)
+  - [Exemplo completo](C%23/)
 
 * * *
 
@@ -58,7 +76,7 @@ Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coi
 - O Node utiliza o OpenSSL instalado no sistema
 - O TLSv1.2 exige que a versão mínima do OpenSSL seja a 1.0.1c
 
-#### Determinando a versão do SSL
+#### Verificando a versão do SSL
 
 1. Execute o seguinte comando em seu servidor
     ```
@@ -85,7 +103,7 @@ Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coi
 
 #### Executando exemplo de Node
 
-1. Baixe o arquivo `tls-example.js` do nosso [repositório](https://github.com/pagarme/TLS-update/blob/docs/node/Node/tls-example.js).
+1. Baixe o arquivo `tls-example.js` do nosso [repositório](Node/).
 2. Coloque-o em seu servidor, e execute-o com o comando `node tls-example.js`
 
 * * *
@@ -97,7 +115,7 @@ Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coi
 * Versão da biblioteca OpenSSL: >= 1.0.1c
 
 * O PHP utiliza o curl fornecido pelo sistema, e precisa possuir a versão do OpenSSL igual ou superior à 1.0.1c.
-* Você pode precisar [atualizar suas bibliotecas SSL/TLS](http://curl.haxx.se/docs/ssl-compared.html).
+* Clique [neste link](http://curl.haxx.se/docs/ssl-compared.html) para entender como funciona o versionamento das bibliotecas SSL. Talvez você precise atualizá-la.
 
 #### Guias
 
@@ -116,7 +134,7 @@ Todas essas bibliotecas OpenSSL podem ser diferentes, e atualizar uma não atual
 
 O `php_curl` usa sua própria versão da biblioteca OpenSSL, que não é a mesma que o PHP usa, que estão nos arquivos `openssl.so` e `php.ini`.
 
-#### Testando sua conexão com TLS 1.2
+#### Verificando sua conexão com TLS 1.2
 
 1. Baixe [esses arquivos](PHP/) em seu servidor.
 
@@ -141,6 +159,10 @@ O `php_curl` usa sua própria versão da biblioteca OpenSSL, que não é a mesma
 
         ```
         Unable to connect to api.pagar.me
+        ```
+
+        ```
+        error: Could not resolve host: api.pagar.me; Name or service not known
         ```
 
 1. Ao atualizar bibliotecas OpenSSL, você precisa atualizar a versão do OpenSSL de seu `php_curl`, e não a versão do OpenSSL de seu servidor operacional.
@@ -182,14 +204,14 @@ Classe completa [aqui](https://github.com/pagarme/TLS-update/blob/readmeJava/Jav
 * * *
 ### Ruby
 
-#### Requisitons
+#### Requisitos
   - É necessário que a versão de seu Ruby seja 2.0.0 ou superior, assim como a do OpenSSL 1.0.1c ou superior:
     - O Ruby 2.0.0 ou superior é necessário para que o mesmo consiga utilizar o TLSv1.2 do OpenSSL de seu próprio sistema;
     - Para conseguir utilizar o TLSv1.2 é necessário o OpenSSL 1.0.1c ou superior instalado em seu sistema.
   
   - Para atualizar as dependências de seu aplicativo, talvez seja necessário utilizar o comando `bundle update`.
 
-#### Testando sua conexão com TSLv1.2
+#### Verificando sua conexão com TSL 1.2
 1. Execute o arquivo `tls-example.rb`, que pode ser encontrado [aqui](https://github.com/pagarme/TLS-update/tree/master/Ruby), da seguinte maneira:
 
     ```
