@@ -45,7 +45,7 @@ Para cada linguagem de programação, há um passo à passo diferente, para que 
 ### .NET
 
 #### Requisitos
-Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coisa necessária é utilizar a versão mais recente do Mono(linux) ou .NET Framework (maior que. ).
+Para habilitar o funcionamento do protocolo TLSv1.2 em seu sistema, a única coisa necessária é utilizar a versão mais recente do Mono(linux) ou .NET Framework (maior que 4.5, recomendado >= 4.6.2).
 
 #### Verificando suas versões de .NET e TLS
 
